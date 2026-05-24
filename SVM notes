@@ -1,0 +1,82 @@
+SVM : support vector machine
+
+--it handles error very well
+--it can handle the boundary value
+--it can only handle both linearly separable and non-linearly separable
+--if it can be separated by line then it is linearly separable
+--if it cannot be separated by line then it is non-linearly separable  (it can be identified by scatter plot)
+
+-- dot is used to separate a 1D data
+-- line is used to separate a 2D data
+-- plane is used to separate a 3D data
+-- plane is used to separate a 4D data
+All these are named as hyperplane
+
+-- any n-dimensional data can be calculated using hyperplane in SVM.
+
+EQUATION OF SVM (important)
+-- if the line passes through the origin then the equation is wTx = Label
+-- if not wTx + b = Label
+
+
+kernel trick for non separable
+
+types of kernel
+
+- linear
+- polynomial
+- radial basis function 
+- sigmoid
+
+
+--if above the line wTx + b = -1
+--if below the line wTx + b = 1
+--the hyperplane wTx + b = Label
+
+
+
+the margin distance
+
+ wTx1 + b = 1
+ wTx2 + b = -1   (-)
+---------------
+wTx1 - wTx2 = 2
+
+wT (x1-x2)  = 2
+
+
+wT (x1-x2)    2
+---------- =  ---
+   ||w||     ||w||
+
+(x1-x2) =  2 / ||w||
+
+
+
+max(2 / ||w||) such that,
+
+yi = {-1, wTx1 + b <=-1   1, wTx1 + b >= 1
+
+min((||w||/2) + c*summation(Epsilon))
+
+c--> number of errors
+summation(Epsilon) --> distance between the error and the margin line
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
